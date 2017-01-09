@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+  body { margin: 0; }
+</style>
+</head>
+<body>
+
+<ul class="menu">
+  <li><%= link_to 'Contact Me', contact_path %></li>
+  <li><%= link_to 'Portfolio', portfolio_path %></li>
+  <li><%= link_to 'Home', root_path %></li>
+</ul>
+
+<div class="grid">
+  <% @photos.each do |photo| %>
+  <a>
+    <figure>
+      <%= image_tag photo.image.url(:medium) %>
+      <figcaption><%= photo.title %></p>
+    </figure>
+  </a>
+  <% end %>
+</div>
+
+</body>
+</html>
+

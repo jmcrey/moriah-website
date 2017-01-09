@@ -43,12 +43,10 @@
 
 <div class="abt-desc">
   <h3 style="text-align:center;"><%= link_to 'About Me', contact_path %></h3>
-  <p>Hi, yes my name is Moriah and I blah blah blah, blah blah very blah. I'm just so blah blah blah about blah because I love blah and blah inspires me.</p>
+  <p><%= @photo.description %></p>
 </div>
 
-<div class="face">
-  <div class="name">
-  </div>
+<div class="face" style="background-image: url('<%= @photo.image.url %>');">
 </div>
 
 <div class="contact-me">
