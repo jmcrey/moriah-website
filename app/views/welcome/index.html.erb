@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+  body { margin: 0; }
+</style>
+</head>
+<body>
+
+<ul>
+  <li><%= link_to 'Contact Me', contact_path %></li>
+  <li><%= link_to 'Portfolio', portfolio_path %></li>
+  <li><%= link_to 'Home', root_path %></li>
+</ul>
+
+<div class="parallax">
+  <div class="welcome">
+    <span class="border"><%= image_tag "Welcome.png" %></span>
+  </div>
+</div>
+
+<div class="port-desc">
+  <h3 style="text-align:center;"><%= link_to 'My Portfolio', portfolio_path %></h3>
+  <p>My portfolio has three separate sections which capture the styles of art I have practiced. They include: traditional illustration, digitial illustration and graphic design.</p>
+</div> 
+
+<ul class = "cb-slideshow">
+  <li>
+      <span></span>
+  </li>
+  <li>
+      <span></span>
+  </li>
+  <li>
+      <span></span>
+  </li>
+  <li>
+      <span></span>
+  </li>
+  <li>
+    <span></span>
+  </li>
+</ul>
+
+<div class="abt-desc">
+  <h3 style="text-align:center;"><%= link_to 'About Me', contact_path %></h3>
+  <p>Hi, yes my name is Moriah and I blah blah blah, blah blah very blah. I'm just so blah blah blah about blah because I love blah and blah inspires me.</p>
+</div>
+
+<div class="face">
+  <div class="name">
+  </div>
+</div>
+
+<div class="contact-me">
+  <h3 style="text-align:center;"><%= link_to 'Contact Me', contact_path %></h3>
+  <p>Hi yes, if you like my stuff and want me to draw or design something for you, do not hesitate to reach out. Follow the link above to find my resume and my contact information.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+  body { margin: 0; }
+</style>
+</head>
+<body>
+
+<ul>
+  <li><%= link_to 'Contact Me', contact_path %></li>
+  <li><%= link_to 'Portfolio', portfolio_path %></li>
+  <li><%= link_to 'Home', root_path %></li>
+</ul>
+
+
+<div class="traditional">
+  <p>
+  image:<a href="http://www.freeimages.co.uk">http://www.freeimages.co.uk</a>
+  </p>
+  <span><a href="/portfolio/traditional"><%= image_tag "traditional_text.png" %></a></span>  
+</div>
+
+<div class="digital">
+  <span><a href="/portfolio/digital"><%= image_tag "digital_text.png" %></a></span>
+</div>
+
+
+<div class="graphic">
+  <span><a href="/portfolio/design"><%= image_tag "graphic_text.png" %></a></span>
+</div>
+
+</body>
+</html>

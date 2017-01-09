@@ -1,0 +1,27 @@
+  <p>
+    <strong>Image</strong>
+    <%= image_tag @photo.image.url %>
+  </p>
+
+  <p>
+    <strong>Title</strong>
+    <%= @photo.title %>
+  </p>
+
+  <p>
+    <strong>Description</strong>
+    <%= @photo.description %>
+  </p>
+
+  <p>
+    <strong>Date</strong>
+    <%= @photo.created %>
+  </p>
+
+  <p>
+    <strong>Type</strong>
+    <%= @photo.photo_type %>
+  </p>
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>

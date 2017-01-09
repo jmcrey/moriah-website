@@ -1,0 +1,23 @@
+<h1>Photo List</h1>
+
+<%= link_to 'New Photo', new_photo_path %> 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Type</th>
+    <th>Date Made</th>
+  </tr>
+ 
+  <% @photos.each do |photo| %>
+    <tr>
+      <td><%= photo.title %></td>
+      <td><%= photo.photo_type %></td>
+      <td><%= photo.created %></td>
+      <td><%= link_to 'Show', photo_path(photo) %></td>
+      <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+      <td><%= link_to 'Delete', photo_path(photo),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>

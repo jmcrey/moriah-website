@@ -1,0 +1,58 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 70px;
+
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+// Container for image and text
+.contact {
+    margin: 40px 40px;
+}
+
+// Picture styling
+.contact img {
+    height: 500px;
+    width: 650px;
+    
+    position: relative;
+    top: 120px;
+    float: left;
+    border: 5px solid #333; 
+}
+
+.contact h3 {
+    color: rgb(119, 119, 119);
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-left: 750px;
+    text-align: justify;
+    position: relative;
+    top: 120px;
+}
+
+.contact p {
+    color: rgb(119, 119, 119);
+    padding-top: 10px;
+    padding-right: 80px;
+    padding-left: 750px;
+    text-align: justify;
+    position: relative;
+    top: 140px;
+} 

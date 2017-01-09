@@ -1,0 +1,113 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 70px;
+
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+
+// Traditional image
+
+.traditional {
+
+    background-image: image-url("traditional.jpeg");
+
+    min-height: 500px;
+
+    position: relative;
+    top: 120px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+// Centering images
+
+.traditional span img {
+    display: block;
+    margin-left: 425px;
+    margin-right: 425px; 
+}
+
+.digital span img, .graphic span img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Image credit
+
+.traditional p {
+    position: relative;
+    float: right;
+    color: white;
+    font-size: xx-small;
+    z-index: 9;
+}
+
+// Graphic and Digital descirptions
+/*
+.trad-desc, .dig-desc, .graphic-desc {
+    position: relative;
+    top: 120px;
+    color: rgb(119, 119, 119);
+    background-color: white;
+    padding-right: 80px;
+    padding-left: 80px;
+    text-align: justify;
+}
+*/
+// Digital Images
+
+.digital {
+
+    background-image: image-url("digital.jpg");
+
+    min-height: 500px;
+
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+// Graphic Image
+.graphic {
+
+    background-image: image-url("design.jpg");
+
+    min-height: 500px;
+
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .traditional, .digital, .graphic {
+        background-attachment: scroll;
+    }
+}
