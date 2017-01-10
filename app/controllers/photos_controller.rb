@@ -1,4 +1,6 @@
 class PhotosController < ApplicationController
+  http_basic_authenticate_with name: "squirt", password: "MoriahL0vesM3^_^"
+
   def index
     @photos = Photo.all
   end

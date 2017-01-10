@@ -1,0 +1,23 @@
+<html>
+
+<head></head>
+
+<body>
+<ul>
+  <li><%= link_to 'Contact Me', contact_path %></li>
+  <li><%= link_to 'Portfolio', portfolio_path %></li>
+  <li><%= link_to 'Home', root_path %></li>
+</ul>
+
+<div class="artpiece">
+  <span><%= image_tag @photo.image.url %></span>
+</div>
+
+<div class="art-desc">
+  <h3><%= @photo.title %></h3>
+  <p><%= @photo.description.html_safe %></p>
+</div>
+
+</body>
+</html>
+

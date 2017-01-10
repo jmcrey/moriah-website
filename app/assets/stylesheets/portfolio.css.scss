@@ -43,8 +43,8 @@ li a {
 
 .traditional span img {
     display: block;
-    margin-left: 425px;
-    margin-right: 425px; 
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 .digital span img, .graphic span img {
@@ -150,3 +150,48 @@ li a {
     margin-right: 0;
   }
 }
+
+// Show
+
+// Container for image and text
+.contact {
+    margin: 40px 40px;
+    display: flex;
+}
+
+// Picture styling
+.artpiece img {
+    // Dimesnions
+    height: 650px;
+    width: 650px;
+    // Position
+    position: relative;
+    top: 150px;
+    // Center
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    // Border
+    border: 5px solid #333;
+}
+
+.art-desc {
+    color: rgb(119, 119, 119);
+    padding: 10px 50px;
+    text-align: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+/*
+.artpiece p {
+    color: rgb(119, 119, 119);
+    padding-top: 10px;
+    padding-right: 80px;
+    padding-left: 750px;
+    text-align: justify;
+    position: relative;
+    top: 140px;
+}
+*/

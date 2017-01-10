@@ -14,7 +14,7 @@
 
 <div class="grid">
   <% @photos.each do |photo| %>
-  <a>
+  <a href="/portfolio/show/<%= photo.id %>">
     <figure>
       <%= image_tag photo.image.url(:medium) %>
       <figcaption><%= photo.title %></p>
